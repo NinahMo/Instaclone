@@ -106,8 +106,8 @@ header{
     background-color: navy;
     height: 30px;
     width: 30px;   
-    padding: 0;
+    padding: 0;    
     margin: 0;
-    border: 0 solid #000;       
+    border: 0 solid #000;         
     border-radius: 50%;
-}
+}      
