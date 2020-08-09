@@ -2,7 +2,19 @@
 
 {% block content %}
     {% for post in posts %}
-        <p>{{post.author}}</p>
-        <p>{{post.caption}}</p>
+        <div class="card">
+            <div class="card_header">
+                <div class="profile_image">
+
+                </div>
+                <div class="post_info">
+                    <div class="post_name">
+                        <div class="post_location">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     {% endfor %}
 {% endblock %}
