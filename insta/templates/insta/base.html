@@ -12,7 +12,7 @@
     <header>
         <div class='navigation'>
             <div class='instalogo'>
-                <a href="{% url 'insta:post_list' %}"><i class="fab fa-instagram"></i> </a>
+                <a href="{% url 'login' %}"><i class="fab fa-instagram"></i> </a>
                 <a class="vl"></a>
                 <a href='/'>Instagram</a>
             </div>
@@ -24,7 +24,9 @@
                 <a href="explore"><i class="far fa-compass"></i></a>
                 {% if user.is_authenticated %}
                     <a href="#"> <i class="far fa-heart"></i> </a>
-                    <a href="{% url 'profile' %}"> <i class="far fa-user"></i> </a>
+                    <a href="{% url 'profile' %}"><i class="far fa-user"></i> </a>
+                    <a href="{% url 'insta:post_create' %}"> <i class="fas fa-plus"></i></a>
+                    <a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i></a>
                 {% endif %}
             </div> 
         </div>
