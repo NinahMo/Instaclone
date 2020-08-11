@@ -1,3 +1,4 @@
+
 # Instaclone
 
 ## Author
@@ -12,10 +13,27 @@ A clone of the website for the popular photo app Instagram.
 3. See other user's pictures on my timeline.
 
 ## Setup/Installation Requirements
-- A database for Python
-- WI-FI or bundles to access the internet -Access to github and clone this repository
-- Atom or Visual studio code to access the code and see the functions
-- Heroku account to deploy or see the page it self
+* A database for Python
+* WI-FI or bundles to access the internet 
+* Access to github and clone this repository
+* Atom or Visual studio code to access the code and see the functions
+* Heroku account to deploy or see the page it self
+
+## How it works
+* Click on the instagram logo icon to login/signup/register
+* Click on the profile icon to view profile
+* Click on the plus(+) icon to add a post
+
+## Known Bugs
+Would you like to contribute> Awesome! To help fix a bug or improve an existing module, go ahead and:
+
+* Fork the repository
+* Create a new branch (Git checkout -b ft-improve)
+* Make the appropiate changes in the files
+* Add changes to reflect the changes made
+* Commit your changes(git commit -am 'ft-improve')
+* Push to the branch (git push origin ft-improve)
+* Create a Pull Request and voila it is done!
 
 ## Technologies Used
 Python
