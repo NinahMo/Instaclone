@@ -36,10 +36,10 @@ Would you like to contribute> Awesome! To help fix a bug or improve an existing 
 * Create a Pull Request and voila it is done!
 
 ## Technologies Used
-Python
-Django
-CSS/HTML
-INSTALLATIONS USED:
+- Python
+- Django
+- CSS/HTML
+- INSTALLATIONS USED:
 1. Pillow
 2. Psycopg2
 3. bootstrap
