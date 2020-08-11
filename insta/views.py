@@ -7,6 +7,9 @@ from django.views.generic import (
     CreateView,
     DetailView,
 )
+from django.contrib import messages
+from django.contrib.auth.decorators import login_required
+from .forms import UserRegisterForm
 
 # Create your views here.
 class PostListView(ListView):
@@ -32,4 +35,18 @@ class PostDetailView(DetailView):
     def get_object(self):
         id_ = self.kwargs.get("id")
         return get_object_or_404(Post, id=id_)
+
+def register(request):
+    if request.method == 'POST':
+        print("This shit is working bro.")
+        form = UserRegisterForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            print(username,"This shit is working")
+            messages.success(request, f'Account created for {username} successfully!')
+            return redirect('/')
+    else:
+        form = UserRegisterForm()
+    return render(request, 'users/register.html', {'form': form})
 
